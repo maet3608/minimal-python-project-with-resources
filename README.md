@@ -7,7 +7,8 @@ A nice introduction on how to write setup.py for resource data can be found
 [here](https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/).
 
 More information on support for command line scrips (entry points) can be
-found [here](https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html).
+found [here](https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html)
+and [here](https://amir.rachum.com/blog/2017/07/28/python-entry-points/).
 
 
 ## Installation
