@@ -19,11 +19,9 @@ optional arguments:
 import myproject
 
 
-
 def resnames():
     from pkg_resources import resource_listdir
-    datadir = 'data/'
-    return resource_listdir(myproject.__name__, datadir)
+    return resource_listdir(myproject.__name__, myproject._resourcedir)
 
 
 def list_resources():
@@ -34,13 +32,12 @@ def list_resources():
 def show_resource(resname):
     from pkg_resources import resource_string
     assert resname in resnames()
-    datadir = 'data/'
-    data = resource_string(myproject.__name__, datadir + resname)
+    data = resource_string(myproject.__name__, myproject._resourcedir + resname)
     print(data.decode())
 
 
 def cmd():
-    from  argparse import ArgumentParser
+    from argparse import ArgumentParser
     parser = ArgumentParser(description='mycmd example')
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-l', '--list', action='store_true',
