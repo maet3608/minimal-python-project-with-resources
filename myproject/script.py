@@ -17,7 +17,7 @@ optional arguments:
 """
 
 import myproject
-import argparse
+
 
 
 def resnames():
@@ -40,7 +40,8 @@ def show_resource(resname):
 
 
 def cmd():
-    parser = argparse.ArgumentParser(description='mycmd example')
+    from  argparse import ArgumentParser
+    parser = ArgumentParser(description='mycmd example')
     group = parser.add_mutually_exclusive_group()
     group.add_argument('-l', '--list', action='store_true',
                        help="list all resource files")
