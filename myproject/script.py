@@ -1,7 +1,7 @@
 """
 Shows how to add command line script capability
 
-see setup.py:
+Note the definition of the entry point in setup.py:
 entry_points={'console_scripts': ['mycmd=%s.script:cmd' % myproject.__name__]}
 
 usage: mycmd [-h] [-l | -s filename | -v]
