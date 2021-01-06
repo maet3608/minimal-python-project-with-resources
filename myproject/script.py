@@ -4,8 +4,16 @@ Shows how to add command line script capability
 see setup.py:
 entry_points={'console_scripts': ['mycmd=%s.script:cmd' % myproject.__name__]}
 
-Usage:
-  mycmd mydata.txt
+usage: mycmd [-h] [-l | -s filename | -v]
+
+mycmd example
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -l, --list            list all resource files
+  -s filename, --show filename
+                        show resource file content
+  -v, --version         show program's version number and exit
 """
 
 import myproject

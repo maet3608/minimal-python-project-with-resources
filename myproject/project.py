@@ -1,8 +1,8 @@
 """
-In the following examples on how to handle resource data.
+In the following an example on how to handle resource data.
 
 Note the line in setup.py that specifies the resource data
-  package_data={'myproject': ['data/*.txt', 'data/*.json']}
+package_data={'myproject': ['data/*.txt', 'data/*.json']}
 
 Do not use resource_filename() and the returned filename to load
 resource data directly, since they may or may not be stored in an egg/zip file!
